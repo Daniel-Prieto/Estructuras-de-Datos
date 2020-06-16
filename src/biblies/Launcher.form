@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" pref="856" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Component id="CLEAN" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="755" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                                  <Component id="txtCantidadTextos" min="-2" pref="249" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                                  <Component id="jButtonCONECTAR" min="-2" pref="283" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Component id="DESCARGAR" min="-2" pref="159" max="-2" attributes="0"/>
+                          <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="CHECKArboles" min="-2" max="-2" attributes="0"/>
+                              <Component id="CHECKListas" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonCargarCSV" min="-2" pref="283" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" pref="832" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel3" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="txtUrl" min="-2" pref="730" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel4" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="txtTabla" min="-2" pref="731" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="0" pref="6" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="jLabel1" min="-2" pref="69" max="-2" attributes="0"/>
+              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel3" min="-2" pref="57" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
+                      <Component id="txtUrl" min="-2" pref="46" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel4" min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="txtTabla" min="-2" pref="46" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel5" min="-2" pref="46" max="-2" attributes="0"/>
+                          <Component id="txtCantidadTextos" min="-2" pref="46" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="31" pref="31" max="-2" attributes="0"/>
+                      <Component id="jButtonCONECTAR" min="-2" pref="72" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="DESCARGAR" min="-2" pref="149" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="CHECKArboles" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="CHECKListas" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
+                      <Component id="jButtonCargarCSV" min="-2" pref="72" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" pref="354" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="CLEAN" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtUrl">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jdbc:mysql://localhost:3306/basehijueputa"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="24" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="BiblIES"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Conectese a una base de datos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="URL"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtTabla">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="libroshptas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tabla"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButtonCONECTAR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CONECTAR"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor Por defecto"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCONECTARActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButtonCargarCSV">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cargar desde CSV"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor Por defecto"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCargarCSVActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="miniConsola">
+          <Properties>
+            <Property name="columns" type="int" value="3"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Texto"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="N&#xb0; textos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCantidadTextos">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="500000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="DESCARGAR">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DESCARGAR DATOS"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor Por defecto"/>
+        </Property>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DESCARGARActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CHECKArboles">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Arboles AVL"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CHECKListas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Listas Enlazadas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="CLEAN">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CLEANActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
