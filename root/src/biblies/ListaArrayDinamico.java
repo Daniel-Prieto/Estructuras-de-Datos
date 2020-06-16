@@ -18,10 +18,16 @@ public class ListaArrayDinamico {
     private String[] dato;
 
     public ListaArrayDinamico() {
-        capacidad = 1000;
+        capacidad = 10;
         ultimo = 0;
-        arreglo = new Texto[1000];
-        dato = new String[1000];
+        arreglo = new Texto[10];
+        dato = new String[10];
+    }
+    public ListaArrayDinamico(int size) {
+        capacidad = size;
+        ultimo = 0;
+        arreglo = new Texto[size];
+        dato = new String[size];
     }
     
     
@@ -140,16 +146,35 @@ public class ListaArrayDinamico {
     public Texto[] getArreglo() {
         return arreglo;
     }
+    
+    public Texto[] getArregloPURO(){
+        Texto[] txt = new Texto[this.tamano];
+        for (int i = 0; i < this.tamano; i++) {
+            if(this.arreglo[i]!=null)
+                txt[i]=this.arreglo[i];
+        }
+        
+        return txt;
+    }
 
     public void setArreglo(Texto[] object){
+        System.out.println("TAMAÑO DE TEXTO[] --> "+ object.length);
         
         this.arreglo=object;
-        
-   
-
+        this.tamano=0;//======= Se ajusta el arreglo al array
+        //de tal manera que se ajusta el size si hay elementos null, o sea {t1,t2,t3,t4,null,null,null} --> Size: 4
+        for(int i=0; i<object.length;i++){
+            //System.out.println("this.tamano --> "+this.tamano);
+            if(this.arreglo[this.tamano]==null){
+                i=object.length+999;
+                break;
+            }
+            else
+                this.tamano++;
         }
-    
-
+        this.ultimo=tamano;
+        this.capacidad=object.length;
+    }
 
          @Override
     

@@ -93,7 +93,7 @@ public class Texto {
         this.calificacion = 0;
         this.comentarios = new ListaArrayDinamico();
         String temp [] = {"No hay comentarios"};
-        this.comentarios.setDato(temp);
+       this.comentarios.setDato(temp);
         contador++;
     }
     //MYSQL

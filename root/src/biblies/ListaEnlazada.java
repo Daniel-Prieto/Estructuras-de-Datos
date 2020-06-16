@@ -34,6 +34,20 @@ public class ListaEnlazada {
          }
     }
     
+   //metodo cuando se borra y se quiere recuperrar
+    public void addIdOrdenado(Nodo nodo){
+        Nodo temp = cabeza;
+        for(int i=1;i<=tamano;i++){
+            if(temp.textoActual.getCodigo()+1==nodo.textoActual.getCodigo()){
+                nodo.siguiente=temp.siguiente;
+                temp.siguiente=nodo; 
+                break;
+            }
+            temp=temp.siguiente;
+        }
+        add(nodo);
+    }
+    
     public void add(ListaEnlazada lista){
         
         
@@ -60,8 +74,7 @@ public class ListaEnlazada {
 
                     iterador = iterador.siguiente;
 
-            }
-                          
+            }                          
 
                     
          }
@@ -288,31 +301,35 @@ public class ListaEnlazada {
     
     public ListaArrayDinamico toListaArrayDinamico(){
         
-        ListaArrayDinamico lista = new ListaArrayDinamico();
-        
+        ListaArrayDinamico lista = new ListaArrayDinamico(this.size());
+        try{
         
         if(cabeza!=null){
              
              
              
              Nodo iterador = cabeza;
+            int i=0;
+            
+            
+           
+                while (iterador != null) {
+                    //System.out.print("["+i+"]"+iterador.textoActual.toString());
 
+                    lista.add(iterador.textoActual);
+                    
+                    iterador = iterador.siguiente;
+                    
+                }
+           
         
-        
-            while (iterador !=null){
-
-
-                lista.add(iterador.textoActual);
-
-
-                iterador = iterador.siguiente;
-
-            }
-                          
 
                     
          }
-         
+          } catch (Exception e) {
+                System.out.print("ERRRRRRRRORR: "+e);
+                
+            }
                  
         return lista;
     }

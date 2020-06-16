@@ -17,12 +17,12 @@ public Connection conexion(){
          try {
             Class.forName(driver);
             conectar = (Connection) DriverManager.getConnection(url,user,pass);
-            //JOptionPane.showMessageDialog(null,"Conexion exitosa");
+            JOptionPane.showMessageDialog(null,"Conexion exitosa");
             /*if(conectar != null){
                 System.out.println("Conexión exitosa..");
             }*/
         } catch (ClassNotFoundException | SQLException e) {
-            JOptionPane.showMessageDialog(null,"Error de conexion " +e.getMessage());
+            //JOptionPane.showMessageDialog(null,"Error de conexion " +e.getMessage());
                // System.out.println("Conexión fallida.."+e);
             
         }

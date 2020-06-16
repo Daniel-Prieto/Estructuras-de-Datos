@@ -269,55 +269,49 @@ public class Usuario{
         int min = 0;
         int posicion=1;
         int comparador = -1;
-        
-  
-        while  (comparador != 0 && min!=max-1 ){
+       
             
-                posicion = (max+min)/2;
-            
-        
-                comparador = arreglo[posicion].compararSegunCondicion(titulo,"titulo");
-        
-        
-                switch (comparador){
-
+            while (comparador != 0 && min != max - 1) {
+                
+                posicion = (max + min) / 2;
+                
+                comparador = arreglo[posicion].compararSegunCondicion(titulo, "titulo");
+                
+                switch (comparador) {
+                    
                     case 1:
-
-
+                        
                         max = posicion;
-
-
+                        
                         break;
                     case 0:
                         
-                                                
-                    System.out.println("["+arreglo[posicion].getCodigo()+"] "+arreglo[posicion].getTitulo()+"---titulo exacto---"+titulo);
+                        ///System.out.println("[" + arreglo[posicion].getCodigo() + "] " + arreglo[posicion].getTitulo() + "---titulo exacto---" + titulo);
                         break;
-
+                    
                     case -1:
-
+                        
                         min = posicion;
-
+                        
                         break;
-
+                    
                 }
-            
+                
             }
+           // System.out.println("arreglo.lenght--> "+arreglo.length+"\nposicion: "+posicion);
         
-                   
-
         while (arreglo[posicion-1].getTitulo().toUpperCase().replaceAll("\\s","").startsWith(titulo.toUpperCase().replaceAll("\\s","")))
         {
             posicion--;
         }
         
         
-                    System.out.println(arreglo[posicion].getTitulo()+"- El Anterior--"+titulo);
+                    //System.out.println(arreglo[posicion].getTitulo()+"- El Anterior--"+titulo);
 
 
         while(arreglo[posicion].getTitulo().toUpperCase().replaceAll("\\s","").startsWith(titulo.toUpperCase().replaceAll("\\s",""))){
             
-            System.out.println(arreglo[posicion].getTitulo()+"---"+titulo);
+            //System.out.println(arreglo[posicion].getTitulo()+"---"+titulo);
             retorno.add(arreglo[posicion]);
 
             
@@ -325,9 +319,10 @@ public class Usuario{
 
         }
         
-         if (retorno.getUltimo()==0)
-            System.out.println("No hay ningun libro que comience por las palabras: "+ titulo);
-       
+         if (retorno.getUltimo()==0){
+            ///System.out.println("No hay ningun libro que comience por las palabras: "+ titulo);
+            return null;
+         }
    
         return retorno;
                    
@@ -350,6 +345,44 @@ public class Usuario{
            System.out.println(resultadoBusqueda);
         }          
     }
+
+    //BUSCAR POR CODIGO BUSQUEDA BINARIA
+    public Texto buscarPorCodigoAVL(int codigo, arbolAVL acodigo){
+        Texto t= acodigo.find(codigo);
+        if(t==null){
+            System.out.println("\n//Texto no encontrado//");
+        }
+        return t;
+    }
+
+    //BUSCAR POR TITULO BUSQUEDA BINARIA
+
+    public Texto buscarPorTituloAVL(String titulo, arbolAVL atitulo){
+        Texto t= atitulo.find(titulo);
+        if(t==null){
+            System.out.println("\n//Texto no encontrado//");
+        }
+        return t;
+    }
+    //BUSCAR POR AUTOR BUSQUEDA BINARIA
+
+    public Texto buscarPorAutorAVL(String autor, arbolAVL atitulo){
+        Texto t= atitulo.find(autor);
+        if(t==null){
+            System.out.println("\n//Texto no encontrado//");
+        }
+        return t;
+    }
+
+
+
+
+
+
+
+
+
+    
    //IMPRIMER LOS TEXTOS
     public void imprimirTextos(ListaEnlazada lista){
         

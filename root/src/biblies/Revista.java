@@ -9,7 +9,7 @@ package biblies;
  *
  * @author deste
  */
-public class Revista {
+public class Revista extends Texto{
     int numero;
     String serie;
     
