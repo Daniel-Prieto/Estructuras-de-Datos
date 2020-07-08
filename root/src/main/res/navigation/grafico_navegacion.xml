@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegacion"
+    app:startDestination="@id/login3">
+    <fragment
+        android:id="@+id/login3"
+        android:name="com.example.bibliies.Login"
+        android:label="activity_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login3_to_menuPrincipal"
+            app:destination="@id/menuPrincipal" />
+        <action
+            android:id="@+id/action_login3_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuPrincipal"
+        android:name="com.example.bibliies.MenuPrincipal"
+        android:label="activity_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menuPrincipal_to_menuTextos"
+            app:destination="@id/menuTextos" />
+    </fragment>
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.bibliies.Registro"
+        android:label="activity_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_login3"
+            app:destination="@id/login3" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuTextos"
+        android:name="com.example.bibliies.MenuTextos"
+        android:label="fragment_menu_textos"
+        tools:layout="@layout/fragment_menu_textos" >
+        <argument
+            android:name="Texto"
+            app:argType="com.example.bibliies.Texto" />
+    </fragment>
+</navigation>

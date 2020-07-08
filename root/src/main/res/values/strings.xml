@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BIBLIIES</string>
+    <string name="Txt_nombre">Ingrese su nombre</string>
+    <string name="txt_correo">Ingrese su correo</string>
+    <string name="txt_contra">Ingrese su contraseña</string>
+    <string name="Txt_rol">Ingrese su Rol en las IES</string>
+    <string name="nivelAcademico">Ingrese su nivelAcademico</string>
+
+    <string-array name="spinnerItems">
+        <item>Estudiante Pregrado</item>
+        <item>Estudiante Posgrado</item>
+        <item>Profesor</item>
+    </string-array>
+
+    <string-array name="criterioBusqueda">
+        <item>Busqueda por Codigo</item>
+        <item>Busqueda por Titulo</item>
+        <item>Busqueda por Autor</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

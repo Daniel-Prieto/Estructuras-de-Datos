@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MenuTextos">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/menuIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Idioma"
+        app:layout_constraintStart_toStartOf="@+id/menuPaginas"
+        app:layout_constraintTop_toBottomOf="@+id/menuPaginas" />
+
+    <TextView
+        android:id="@+id/menuTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Titulo"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menuAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Autor"
+        app:layout_constraintStart_toStartOf="@+id/menuTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/menuTitulo" />
+
+    <TextView
+        android:id="@+id/menuFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_weight="1"
+        android:text="Fecha"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/menuAutor"
+        app:layout_constraintTop_toTopOf="@+id/menuAutor" />
+
+    <TextView
+        android:id="@+id/menuCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:text="Codigo"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuTitulo"
+        app:layout_constraintStart_toEndOf="@+id/menuTitulo" />
+
+    <TextView
+        android:id="@+id/menuCalificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calificacion"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/menuTema"
+        app:layout_constraintTop_toBottomOf="@+id/menuTema" />
+
+    <TextView
+        android:id="@+id/menuNumeroCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Numero Calificaciones"
+        app:layout_constraintStart_toEndOf="@+id/menuCalificacion"
+        app:layout_constraintTop_toTopOf="@+id/menuCalificacion" />
+
+    <TextView
+        android:id="@+id/menuPaginas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Numero de Paginas"
+        app:layout_constraintStart_toStartOf="@+id/menuAutor"
+        app:layout_constraintTop_toBottomOf="@+id/menuAutor" />
+
+    <TextView
+        android:id="@+id/menuTema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Tema"
+        app:layout_constraintStart_toStartOf="@+id/menuIdioma"
+        app:layout_constraintTop_toBottomOf="@+id/menuIdioma" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
